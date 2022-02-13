@@ -1,2 +1,13 @@
 # MrBeanDev-TRC20
-This Repository contains all the Information about our token
+
+<details>
+<summary>Our Contract Address :</summary>
+<br>
+<code>TBykWdyr299udVX3hc7LAKNmeaWXTNyXGf</code>
+</details>
+
+<details>
+<summary>Contact Owner :</summary>
+<br>
+  Telegram : <a href="https://t.me/mrbeandev">@mrbeandev</a>
+</details>
