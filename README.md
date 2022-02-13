@@ -9,5 +9,5 @@
 <details>
 <summary>Contact Owner :</summary>
 <br>
-  Telegram : <a href="https://t.me/mrbeandev">@mrbeandev</a>
+  Telegram : <a href="https://t.me/mrbeandev" target="_blank">@mrbeandev</a>
 </details>
