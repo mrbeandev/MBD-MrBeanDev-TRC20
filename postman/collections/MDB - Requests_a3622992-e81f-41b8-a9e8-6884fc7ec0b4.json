@@ -1,0 +1,217 @@
+{
+    "info": {
+        "_postman_id": "60e2f8f9-f917-4c36-804b-509ae602b04d",
+        "name": "MDB - Requests",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Get token Basic Info",
+            "id": "83752e71-8495-4969-bacb-b6152f76b566",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://abc.ablesdxd.link/swap/scan/getExchangeInfo?tokenAddress=TBykWdyr299udVX3hc7LAKNmeaWXTNyXGf&ver=",
+                    "protocol": "https",
+                    "host": [
+                        "abc",
+                        "ablesdxd",
+                        "link"
+                    ],
+                    "path": [
+                        "swap",
+                        "scan",
+                        "getExchangeInfo"
+                    ],
+                    "query": [
+                        {
+                            "key": "tokenAddress",
+                            "value": "TBykWdyr299udVX3hc7LAKNmeaWXTNyXGf"
+                        },
+                        {
+                            "key": "ver",
+                            "value": ""
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "get Contract Details",
+            "id": "e0788828-8412-4360-be24-f92717cff16d",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true,
+                "disabledSystemHeaders": {
+                    "content-type": true
+                }
+            },
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\r\n    \"contract_address\": \"41160a8e0637aafa85403952b43ee7336683e5afeb\",\r\n    \"owner_address\": \"417e5f4552091a69125d5dfcb7b8c2659029395bdf\",\r\n    \"function_selector\": \"balanceOf(address)\",\r\n    \"parameter\": \"000000000000000000000000b37577aaea988ac2867ff579b90df4441141c2c1\"\r\n}"
+                },
+                "url": {
+                    "raw": "https://api.trongrid.io/wallet/triggerconstantcontract",
+                    "protocol": "https",
+                    "host": [
+                        "api",
+                        "trongrid",
+                        "io"
+                    ],
+                    "path": [
+                        "wallet",
+                        "triggerconstantcontract"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Token Transactions",
+            "id": "082d9a33-5484-4e47-81f0-2c769f00cc73",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://abc.ablesdxd.link/swap/scan/transactions?exchangeAddress=TSL6gBHyUi4CZcXqjNccQtK2nyfg3rTkxj",
+                    "protocol": "https",
+                    "host": [
+                        "abc",
+                        "ablesdxd",
+                        "link"
+                    ],
+                    "path": [
+                        "swap",
+                        "scan",
+                        "transactions"
+                    ],
+                    "query": [
+                        {
+                            "key": "exchangeAddress",
+                            "value": "TSL6gBHyUi4CZcXqjNccQtK2nyfg3rTkxj"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Token Volume's / Price",
+            "id": "6cd50505-3481-438e-a194-75709806e788",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://abc.ablesdxd.link/swap/scan/statusinfo?exchangeAddress=TSL6gBHyUi4CZcXqjNccQtK2nyfg3rTkxj",
+                    "protocol": "https",
+                    "host": [
+                        "abc",
+                        "ablesdxd",
+                        "link"
+                    ],
+                    "path": [
+                        "swap",
+                        "scan",
+                        "statusinfo"
+                    ],
+                    "query": [
+                        {
+                            "key": "exchangeAddress",
+                            "value": "TSL6gBHyUi4CZcXqjNccQtK2nyfg3rTkxj"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get 1 Trx to USD Price",
+            "id": "e3fe6694-290d-4f17-88fb-09e7f3e841af",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://abc.ablesdxd.link/swap/scan/priceinfo",
+                    "protocol": "https",
+                    "host": [
+                        "abc",
+                        "ablesdxd",
+                        "link"
+                    ],
+                    "path": [
+                        "swap",
+                        "scan",
+                        "priceinfo"
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Get Signals for creating a chart",
+            "id": "d29d7524-5384-4ef6-bbbb-17d121471400",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "https://apilist.tronscan.io/api/justswap/kline?token_address=TBykWdyr299udVX3hc7LAKNmeaWXTNyXGf&granularity=1h&time_start=1644745760&time_end=1644830957",
+                    "protocol": "https",
+                    "host": [
+                        "apilist",
+                        "tronscan",
+                        "io"
+                    ],
+                    "path": [
+                        "api",
+                        "justswap",
+                        "kline"
+                    ],
+                    "query": [
+                        {
+                            "key": "token_address",
+                            "value": "TBykWdyr299udVX3hc7LAKNmeaWXTNyXGf"
+                        },
+                        {
+                            "key": "granularity",
+                            "value": "1h"
+                        },
+                        {
+                            "key": "time_start",
+                            "value": "1644745760"
+                        },
+                        {
+                            "key": "time_end",
+                            "value": "1644830957"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
